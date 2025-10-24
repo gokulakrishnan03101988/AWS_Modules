@@ -23,13 +23,9 @@ variable "ingress_rules" {
   description = "List of ingress rules"
 }
 
+
 variable "tags" {
-  type = map(string)
-  default = {
-    Environment = "dev"
-    Project     = "web-app"
-    Owner       = "Gokulakrishnan"
-    Department  = "Engineering"
-  }
-  description = "Development, Acceptance & Production"
+  type        = map(string)
+  default     = {}
+  description = "Tags to apply to the security group"
 }
