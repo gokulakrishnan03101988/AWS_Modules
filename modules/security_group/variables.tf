@@ -15,12 +15,12 @@ variable "vpc_id" {
 
 variable "ingress_rules" {
   type = list(object({
-    from_port   = 0
-    to_port     = 65534
+    from_port   = number
+    to_port     = number
     protocol    = string
     cidr_blocks = list(string)
   }))
-  description = "192.168.0.0/24"
+  description = "List of ingress rules"
 }
 
 variable "tags" {
