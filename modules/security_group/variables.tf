@@ -10,7 +10,7 @@ variable "description" {
 
 variable "vpc_id" {
   type        = string
-  description = "vpc-1681ab7e"
+  description = "VPC ID where the security group will be created"
 }
 
 variable "ingress_rules" {
